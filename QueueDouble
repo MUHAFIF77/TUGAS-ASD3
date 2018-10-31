@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+
+
+
+public class QueueDouble {
+
+	ArrayList<Double> kelase = new ArrayList<Double>();
+
+	int afif = -1;
+
+
+
+	public void insert(Double value) {
+
+		afif++;
+
+		kelase.add(afif,value);
+
+	}
+
+	public Double get() {
+
+		Double value = 0.1;
+
+		if(afif>-1) {
+
+			value = kelase.get(0);
+
+			kelase.remove(0);
+
+			afif--;
+
+		}
+
+		return value;
+
+		
+
+	}
+
+	public void cetak() {
+
+		System.out.println("ECOR : "+afif+" > VARIABLE: "+kelase.toString());
+
+	}
+
+}
