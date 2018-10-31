@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+
+
+
+public class QueueString {
+
+	ArrayList<String> kelase = new ArrayList<String>();
+
+	int afif = -1;
+
+
+
+	public void insert(String value) {
+
+		afif++;
+
+		kelase.add(afif,value);
+
+	}
+
+	public String get() {
+
+		String value = "KOSONG";
+
+		if(afif>-1) {
+
+			value = kelase.get(0);
+
+			kelase.remove(0);
+
+			afif--;
+
+		}
+
+		return value;
+
+		
+
+	}
+
+	public void cetak() {
+
+		System.out.println("ECOR : "+afif+" > KELAS A: "+kelase.toString());
+
+	}
+
+}
