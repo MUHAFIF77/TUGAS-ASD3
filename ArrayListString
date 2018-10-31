@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+
+
+
+public class ArrayListString {
+
+	
+
+	public static void main(String[] args) {
+
+		ArrayList<String>string = new ArrayList<String>();
+
+		string.add("MUH");
+
+		string.add("AFIF");
+
+		string.add("SHININGBRIGHT");
+
+		
+
+    System.out.println(string.toString());
+
+		System.out.println("index of afif : "+string.indexOf("afif"));
+
+		
+
+    string.remove(1);
+
+		System.out.println(string.toString());
+
+		System.out.println("SIZE : "+string.size());	
+
+	}
+
+}
